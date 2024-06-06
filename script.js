@@ -13,6 +13,9 @@ document.addEventListener("DOMContentLoaded", function() {
         eventNode.style.left = `${(index / events.length) * 100}%`;
         eventNode.addEventListener('click', () => showEventDescription(event));
         timeline.appendChild(eventNode);
+        eventNode.innerHTML = `
+        <h3 class="dateHeader">${event[date}</h3>
+        <p class="event-info">${event[description}</p>`
     });
 
     function showEventDescription(event) {
