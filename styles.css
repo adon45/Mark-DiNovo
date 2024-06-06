@@ -56,4 +56,30 @@ h1 {
   text-decoration: underline;
 }
 /* time Line */
+.Timeline__text,
+.Timeline__date { 
+  width: 50%; 
+}
 
+.Timeline__item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.Timeline_item:nth-child(even) .Timeline_date {
+  text-align: right;
+  padding-right: 8.3rem;
+}
+
+.Timeline_item:nth-child(even) .Timeline_text {
+  padding-left: 8.3rem;
+}
+
+.Timeline_item:nth-child(odd) .Timeline_text {
+  text-align: right;
+  align-items: flex-end;
+  padding-right: 8.3rem;
+}
+
+.Timeline_item:nth-child(odd) .Timeline_date {
+  padding-left: 8.3rem;
+}
